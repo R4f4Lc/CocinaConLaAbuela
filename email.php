@@ -21,7 +21,7 @@ function email() {
 				$mail->Port = 587;                                    // TCP port to connect to
 
 				    //Recipients
-				$mail->setFrom('recetas.abuela.daw@gmail.com', 'Cocina con la Abuela');
+				$mail->setFrom($email, 'Cocina con la Abuela');
 				$mail->addAddress($_POST['email'], $_POST['nombre']);    // Add a recipient
 
 				    //Content
